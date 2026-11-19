@@ -21,6 +21,8 @@ from sklearn.metrics import (
 )
 from sklearn.decomposition import PCA
 
+PER_IMAGE_RECORDS = []  # [qwen-explain] one row per test image, saved at the end
+
 from src.subspacead.config import get_args, parse_layer_indices, parse_grouped_layers
 from src.subspacead.utils.common import (
     setup_logging,
@@ -1139,6 +1141,13 @@ def main():
 
                 img_true.append(1 if is_anomaly else 0)
                 img_pred_auroc.append(float(img_score))
+                PER_IMAGE_RECORDS.append({  # [qwen-explain]
+                    "category": category,
+                    "path": str(path),
+                    "defect_type": Path(path).parent.name,
+                    "label": 1 if is_anomaly else 0,
+                    "img_score": float(img_score),
+                })
                 if thr_img is not None:
                     img_pred_f1.append(1 if img_score >= thr_img else 0)
 
@@ -1175,16 +1184,15 @@ def main():
                 pro_gt_masks.append(gt_mask)
                 pro_anomaly_maps.append(anomaly_map_final.astype(np.float32))
 
+                if args.save_intro_overlays:  # [qwen-explain] now for good images too
+                    save_overlay_for_intro(
+                        path,
+                        pil_img,
+                        anomaly_map_normalized,
+                        args.outdir,
+                        category,
+                    )
                 if is_anomaly:
-                    if args.save_intro_overlays:
-                        vis_img = pil_img
-                        save_overlay_for_intro(
-                            path,
-                            vis_img,
-                            anomaly_map_normalized,
-                            args.outdir,
-                            category,
-                        )
                     if vis_saved_count < args.vis_count:
                         vis_img = pil_img
                         if args.docrop and not args.patch_size:
@@ -1364,6 +1372,9 @@ def main():
 
     results_path = os.path.join(args.outdir, "benchmark_results.csv")
     df.to_csv(results_path, index=False, float_format="%.4f")
+    pd.DataFrame(PER_IMAGE_RECORDS).to_csv(  # [qwen-explain]
+        Path(args.outdir) / "per_image_scores.csv", index=False
+    )
     logging.info(f"\nResults saved to {results_path}")
 
 
