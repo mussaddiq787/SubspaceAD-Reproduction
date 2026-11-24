@@ -12,11 +12,72 @@ This repository contains a reproduction study and a Qwen3-VL explanation experim
 
 ## Reproduction study
 
-The MVTec AD reproduction uses DINOv2-registers-large at 448 pixels. Its 1-shot run achieved 93.57% image AUROC and 97.21% pixel AUROC. The [lab notes](LAB_NOTES.md) document the k-shot ablation and the [Qwen evaluation report](reports/qwen_evaluation_results.md) covers the grounded, ungrounded, and original-image crop experiments. Saved benchmark tables, configurations, and Qwen answers are in [`results/`](results/).
+This fork reproduces SubspaceAD on **all 15 MVTec AD categories** with the authors' code
+on a **6 GB laptop GPU** (NVIDIA Quadro RTX 3000), and adds a grounded vision-language
+explanation module. Upstream code is unchanged apart from saving per-image scores and
+overlays (commits `59d7d82`, `1e1f9b2`).
 
-Download the dataset using the instructions below. Run `main.py` with `--save_intro_overlays` to regenerate the overlays used by `explain_qwen.py` and `make_qual_figure.py`. The [experiment protocol](reports/qwen_experiment_protocol.md) records the run settings.
+**Setup.** The paper uses DINOv2-giant at 672 px. That needs about 25 GB of GPU memory in
+this code, so this reproduction uses **DINOv2-registers-large at 448 px**; every other
+setting matches the authors' `scripts/benchmark_few_shot.sh` (layers −12…−18 averaged,
+30 rotation augmentations, PCA 99% variance, top-1% image score, seed 42).
 
-The [qualitative figure](report_figs/fig_qual.png) combines resized MVTec AD images and masks with generated heatmap overlays and score annotations. The crop previews in `results/` show resized full images and hotspot crops. The source images and masks are © 2019 MVTec Software GmbH. The figure and crop previews are shared under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). [MVTec AD dataset](https://www.mvtec.com/company/research/datasets/mvtec-ad)
+### Main results (MVTec AD, %)
+
+| | Ours k=1 | Ours k=2 | Ours k=4 | Paper k=1 | Paper k=2 | Paper k=4 |
+|---|---|---|---|---|---|---|
+| Image AUROC | 93.6 | 94.4 | 95.2 | 97.1 | 97.6 | 97.9 |
+| Pixel AUROC | 97.2 | 97.4 | 97.6 | 97.5 | 97.7 | 97.8 |
+| AU-PRO | 93.2 | 93.5 | 94.1 | 93.7 | 94.1 | 94.3 |
+
+Paper values: 5-seed means from the paper's supplementary Table 5. Ours: one seed (42).
+
+<p align="center"><img src="report_figs/fig_percat.png" width="48%"> <img src="report_figs/fig_kshot.png" width="48%"></p>
+
+### Key findings
+
+1. **Localisation survives, detection drops.** The smaller backbone at lower resolution
+   keeps pixel AUROC within 0.3 points of the paper, but one-shot image AUROC falls by
+   3.5 points. Four normal images close about half of that gap.
+2. **The gap comes from three categories, each for a different reason.**
+   - *Transistor* (84.2 vs 96.6): the code disables augmentation for this category, so
+     PCA learns from only 1,024 patches. A second normal image adds +7.3 points.
+     Missing or misplaced transistors are logical anomalies that patch-wise scoring misses.
+   - *Cable* (77.8 vs 91.9): swapped wires look normal patch by patch; only the
+     arrangement is wrong.
+   - *Screw* (70.0 vs 89.0): more normal images do **not** help (70.0 → 71.1 → 69.2),
+     while the paper's larger, higher-resolution setting scores 19 points more. Tiny
+     thread defects are limited by resolution, not by data.
+3. **Why the paper setting does not fit small GPUs.** The extractor requests attention
+   maps from every layer (`output_attentions=True`, eager attention), so memory grows
+   with the square of the token count: about 9.4 GB for DINOv2-large at 672 px (out of
+   memory on 6 GB) versus 2.8 GB at 448 px. The estimate matches the allocation in the
+   out-of-memory error to within 0.2%.
+
+<p align="center"><img src="report_figs/fig_memory.png" width="55%"></p>
+
+4. **The chosen normal image matters.** The seed is drawn once and consumed category by
+   category, so running a subset of categories changes the sampled images: screw and
+   transistor moved by +1.2 and −2.0 points with no other change. Run all 15 categories
+   to reproduce these numbers.
+5. **Grounded explanations (Qwen3-VL-2B, local, fp16).** The detector decides and the
+   language model only explains. It followed every correct NORMAL decision (11/11), but
+   naming the defect type stayed at chance level (19–22% vs 20%). Details:
+   [Qwen evaluation](reports/qwen_evaluation_results.md).
+
+### Reproduce
+
+```bash
+conda activate subspacead
+python -u main.py --dataset_name mvtec_ad --dataset_path datasets/mvtec-ad \
+  --image_res 448 --k_shot 1 --layers="-12,-13,-14,-15,-16,-17,-18" \
+  --model_ckpt facebook/dinov2-with-registers-large --aug_count 30 \
+  --pca_ev 0.99 --seed 42 --agg_method mean --outdir results/repro_k1_mvtec_L448
+bash run_kshot.sh          # k = 2 and 4
+```
+Environment: Python 3.10.22, PyTorch 2.14.1 (CUDA 13.0), Transformers 5.20.1
+(full list in `my_versions.txt`). Dataset counts were verified against the official
+split (3,629 train / 1,725 test). [Lab notes](LAB_NOTES.md) record every run.
 
 ---
 
