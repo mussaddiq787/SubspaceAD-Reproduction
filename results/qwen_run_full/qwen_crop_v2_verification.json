@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-21",
+  "status": "PASS",
+  "paired_samples": 120,
+  "same_paths_scores_thresholds_decisions": true,
+  "v1_artifacts_unchanged": true,
+  "v1_artifact_hashes": {
+    "results/qwen_run_full/mvtec_ad_mean_layers-12-13-14-15-16-17-18_res448_docrop0_score-reconstruction_clahe0_dropk0_model-dinov2-with-registers-largepca_ev0.99_i-scoremtop1p_k1_aug30xr_seed42/per_image_scores.csv": "1453cf27ba224fb948771b57d61d97f7c402b7a8746bb9eaf063916a3e08e313",
+    "results/qwen_run_full/mvtec_ad_mean_layers-12-13-14-15-16-17-18_res448_docrop0_score-reconstruction_clahe0_dropk0_model-dinov2-with-registers-largepca_ev0.99_i-scoremtop1p_k1_aug30xr_seed42/qwen_explanations_grounded.csv": "61709e46f6216432f8c3493043a99c2ebc3f9c97cf93fc849a61790b4fb07958",
+    "results/qwen_run_full/mvtec_ad_mean_layers-12-13-14-15-16-17-18_res448_docrop0_score-reconstruction_clahe0_dropk0_model-dinov2-with-registers-largepca_ev0.99_i-scoremtop1p_k1_aug30xr_seed42/qwen_explanations_ungrounded.csv": "872534173a4c13121ca5c9f0a64c4553aa8205529c74623272f71d9af821df55"
+  },
+  "v1_code_reference_sha256": "487edf50529b48fd1609ca439b111424c6e2aa0e6dc857e3ba547ef59c3dbd1a",
+  "crop_code_sha256": "e15d852fb4cca8901bcdf315374881077c49ffd7e5a5a628f99c23a97b5147e7",
+  "main_branch_sha": "ef56d5c8ab2f1feb7dda1c93b25cc3f73f0960d7",
+  "cached_model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "same_model_revision_as_v1": true,
+  "focused_tests_passed": 8,
+  "crop_statistics": {
+    "crop_area_fraction": {
+      "count": 120.0,
+      "mean": 0.9129024910079893,
+      "std": 0.16796933153762247,
+      "min": 0.24674444444444443,
+      "25%": 0.8913281103063513,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "full_image_bounding_boxes": 73,
+    "empty_difference_fallbacks": 0,
+    "margin_per_side": 0.15
+  },
+  "gpu_memory": {
+    "input_mode": "crop",
+    "full_image_size": 448,
+    "crop_image_size": 448,
+    "dtype": "torch.float16",
+    "gpu_name": "Quadro RTX 3000",
+    "device_total_bytes": 6017515520,
+    "peak_allocated_bytes": 4393509888,
+    "peak_reserved_bytes": 4441767936,
+    "note": "PyTorch peaks include model loading and generation, not all driver/display memory"
+  },
+  "instruction_adherence": {
+    "v1_grounded": {
+      "all_NORMAL_decisions": 17,
+      "all_NORMAL_instruction_violations": 0,
+      "true_normal_NORMAL_decisions": 11,
+      "true_normal_NORMAL_instruction_violations": 0
+    },
+    "v1_ungrounded": {
+      "all_NORMAL_decisions": 17,
+      "all_NORMAL_instruction_violations": 7,
+      "true_normal_NORMAL_decisions": 11,
+      "true_normal_NORMAL_instruction_violations": 4
+    },
+    "v2_crop_grounded": {
+      "all_NORMAL_decisions": 17,
+      "all_NORMAL_instruction_violations": 4,
+      "true_normal_NORMAL_decisions": 11,
+      "true_normal_NORMAL_instruction_violations": 2
+    }
+  },
+  "artifacts": {
+    "qwen_explanations_crop_grounded.csv": "7cb3494f4188f25e3ed6b2aa62b913a28fc71669455bd9790826ad1845607014",
+    "qwen_comparison_v2.csv": "b82eedbfbc23fc994c56d5e06ddf27c3ee0b11a9ab05716dc9c6bc43622ff07b",
+    "qwen_normal_decision_comparison.csv": "d9fc42fe2441196e07f69ec9884be5528f2e421c8d50a3ce63cd4f4a10eb2231",
+    "qwen_crop_v2_examples.json": "b7ac81c90b9a6c3770e6ef5ae4dd5d3a9d9f1411b3d4b25b2451d007b4d60129"
+  },
+  "unchanged_v1_core_functions": [
+    "best_f1_threshold",
+    "norm",
+    "parse_json",
+    "load_model"
+  ],
+  "final_commit": "1e1f9b2d7a845ce900ade66dec34d072f2b41da5",
+  "committed_files": [
+    "explain_qwen.py"
+  ],
+  "main_branch_unchanged": true,
+  "focused_test_output_sha256": "ae06033a2933cb46876c92eaae00f47927e4ed52755ee8263ad3983e3f7292a7"
+}

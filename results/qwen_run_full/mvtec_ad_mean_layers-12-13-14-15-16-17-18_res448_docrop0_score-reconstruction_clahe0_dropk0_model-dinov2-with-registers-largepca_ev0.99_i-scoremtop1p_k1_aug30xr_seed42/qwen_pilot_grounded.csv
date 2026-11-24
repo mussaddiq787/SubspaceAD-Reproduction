@@ -1,0 +1,28 @@
+category,path,defect_type,label,img_score,threshold,decision,pred_type,correct_type,location,description,severity,raw
+bottle,datasets/mvtec-ad/bottle/test/broken_large/019.png,broken_large,1,6.030172824859619,3.7206685543060303,DEFECTIVE,contamination,False,around the bottle opening,"The image shows a circular area with a ring of colored patches, indicating a contamination on the bottle's surface. The color gradient from blue to orange suggests a localized defect.",medium,"```json
+{
+  ""defect_type"": ""contamination"",
+  ""location"": ""around the bottle opening"",
+  ""description"": ""The image shows a circular area with a ring of colored patches, indicating a contamination on the bottle's surface. The color gradient from blue to orange suggests a localized defect."",
+  ""severity"": ""medium""
+}
+```"
+bottle,datasets/mvtec-ad/bottle/test/broken_small/009.png,broken_small,1,6.398532867431641,3.7206685543060303,DEFECTIVE,contamination,False,inside the bottle,"A colored, irregular patch is visible inside the bottle, indicating a contamination.",medium,"```json
+{
+  ""defect_type"": ""contamination"",
+  ""location"": ""inside the bottle"",
+  ""description"": ""A colored, irregular patch is visible inside the bottle, indicating a contamination."",
+  ""severity"": ""medium""
+}
+```"
+bottle,datasets/mvtec-ad/bottle/test/contamination/002.png,contamination,1,5.423447608947754,3.7206685543060303,DEFECTIVE,contamination,True,center,"A central, bright blue and green area with surrounding red and orange patches, indicating a concentrated contamination.",high,"```json
+{
+  ""defect_type"": ""contamination"",
+  ""location"": ""center"",
+  ""description"": ""A central, bright blue and green area with surrounding red and orange patches, indicating a concentrated contamination."",
+  ""severity"": ""high""
+}
+```"
+bottle,datasets/mvtec-ad/bottle/test/good/016.png,good,0,3.025255918502808,3.7206685543060303,NORMAL,none,True,center,"The image shows a bottle with no visible defects, and the anomaly detector's decision is NORMAL.",none,"```json
+{""defect_type"": ""none"", ""location"": ""center"", ""description"": ""The image shows a bottle with no visible defects, and the anomaly detector's decision is NORMAL."", ""severity"": ""none""}
+```"

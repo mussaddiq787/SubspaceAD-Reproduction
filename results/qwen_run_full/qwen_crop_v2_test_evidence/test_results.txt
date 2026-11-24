@@ -1,0 +1,13 @@
+test_boundary_clipping (__main__.CropChecks) ... ok
+test_crop_default_reuses_v1_cohort (__main__.CropChecks) ... ok
+test_default_prompts_byte_identical (__main__.CropChecks) ... ok
+test_empty_mask_and_336_fallback_size (__main__.CropChecks) ... ok
+test_margin_mapping_and_original_pixels_only (__main__.CropChecks) ... ok
+test_noninteger_coordinate_scaling (__main__.CropChecks) ... ok
+test_renderer_roundtrip (__main__.CropChecks) ... ok
+test_single_image_ask_matches_v1_and_two_image_order (__main__.CropChecks) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.072s
+
+OK

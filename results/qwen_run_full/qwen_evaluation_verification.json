@@ -1,0 +1,65 @@
+{
+  "status": "EXPLORATORY_QWEN_EVALUATION_COMPLETE",
+  "date": "2026-11-19",
+  "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+  "cached_model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "dtype": "float16",
+  "quantized": false,
+  "versions": {
+    "torch": "2.14.1",
+    "transformers": "5.20.1",
+    "accelerate": "1.15.0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "Pillow": "12.3.0",
+    "huggingface-hub": "2.2.0"
+  },
+  "runtime_torch_version": "2.14.1+cu130",
+  "sample_seed": 42,
+  "per_type": 5,
+  "categories": [
+    "bottle",
+    "cable",
+    "screw",
+    "transistor"
+  ],
+  "identical_sample_ids_and_detector_facts": true,
+  "max_new_tokens": 150,
+  "do_sample": false,
+  "oracle_test_thresholds": {
+    "bottle": 3.7206685543060303,
+    "cable": 2.183403730392456,
+    "screw": 2.107628107070923,
+    "transistor": 6.754857540130615
+  },
+  "main_py_sha256": "0588a00209bb75b31a1889c3534e9b82acd2366aa0abeaaa76e140a01d2f4032",
+  "explain_qwen_sha256": "487edf50529b48fd1609ca439b111424c6e2aa0e6dc857e3ba547ef59c3dbd1a",
+  "script_matches_attachment": true,
+  "detector_inputs_sha256": "1453cf27ba224fb948771b57d61d97f7c402b7a8746bb9eaf063916a3e08e313",
+  "main_branch_sha": "ef56d5c8ab2f1feb7dda1c93b25cc3f73f0960d7",
+  "precommit_head": "ef56d5c8ab2f1feb7dda1c93b25cc3f73f0960d7",
+  "artifacts": {
+    "qwen_explanations_grounded.csv": "61709e46f6216432f8c3493043a99c2ebc3f9c97cf93fc849a61790b4fb07958",
+    "qwen_comparison.csv": "bb6cba8674c4a5380c164fe5ab335886cfd81eea4cfedc21950c468c0e2e55c6",
+    "qwen_pilot_grounded.csv": "9bf13966310d362581b07da4497f6e4f0d22bfb58948ec6c76e57740b80f780f",
+    "qwen_explanations_ungrounded.csv": "872534173a4c13121ca5c9f0a64c4553aa8205529c74623272f71d9af821df55"
+  },
+  "limitations": [
+    "This hardware-limited DINOv2-large at 448 pixels replays the earlier local reproduction; matching that table is not a claim of matching the original paper hardware/model configuration or headline performance.",
+    "Thresholds maximize F1 using the same category test labels: these are oracle thresholds, not independent calibration or deployable operating points. An absent official validation set does not require this choice.",
+    "Only five images per folder type, one fixed sampling seed, and a small 2B model were evaluated. This balanced sample differs from natural benchmark prevalence; no population significance or seed-variance claim is supported.",
+    "Grounded prompts prescribe none for NORMAL. Good-image none rate therefore reflects supplied detector decisions and instructions, not independent recognition. Detector errors propagate.",
+    "The ungrounded condition omits the score, threshold, decision and grounding/normalization instructions. This compares prompt packages, not only the decision token.",
+    "Both conditions see the same resized normalized overlay and known category-level defect taxonomy. Overlay colours have no absolute cross-image anomaly meaning; fine details may be obscured. This is a closed-set experiment.",
+    "Descriptions, locations and severity have no independently reviewed language references. Type correctness is measured against folder names; qualitative text examples do not validate causal explanations or severity.",
+    "The category-subset finding demonstrates global random-stream dependence. Changed exemplars and augmentation streams are confounded; the two runs do not estimate exemplar-only or original-paper uncertainty."
+  ],
+  "final_commit": "59d7d82e350c5da828b2fcba3e8bf4662aa9652c",
+  "committed_files": [
+    "explain_qwen.py",
+    "main.py"
+  ],
+  "main_branch_unchanged": true,
+  "environment_freeze_sha256": "3a4f07e51e942932391ab5feaae91d0c12d0ef9eff9bff2d05b006408883b076"
+}

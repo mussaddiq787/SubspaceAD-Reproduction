@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-19",
+  "timezone": "Asia/Karachi",
+  "csv": "results/qwen_run/mvtec_ad_mean_layers-12-13-14-15-16-17-18_res448_docrop0_score-reconstruction_clahe0_dropk0_model-dinov2-with-registers-largepca_ev0.99_i-scoremtop1p_k1_aug30xr_seed42/per_image_scores.csv",
+  "rows": 493,
+  "overlay_pngs": 493,
+  "normal_images": 179,
+  "defective_images": 314,
+  "input_integrity": "PASS",
+  "baseline_comparisons": [
+    {
+      "category": "bottle",
+      "n_images": 83,
+      "previous_image_auroc": 1.0,
+      "current_image_auroc": 1.0,
+      "delta": 0.0,
+      "matches_previous_4dp": true
+    },
+    {
+      "category": "cable",
+      "n_images": 150,
+      "previous_image_auroc": 0.7777,
+      "current_image_auroc": 0.7777,
+      "delta": 0.0,
+      "matches_previous_4dp": true
+    },
+    {
+      "category": "screw",
+      "n_images": 160,
+      "previous_image_auroc": 0.6997,
+      "current_image_auroc": 0.7122,
+      "delta": 0.012500000000000067,
+      "matches_previous_4dp": false
+    },
+    {
+      "category": "transistor",
+      "n_images": 100,
+      "previous_image_auroc": 0.8417,
+      "current_image_auroc": 0.8221,
+      "delta": -0.01959999999999995,
+      "matches_previous_4dp": false
+    }
+  ],
+  "exact_reproduction_match": "FAIL_FOR_SCREW_AND_TRANSISTOR",
+  "diagnosis": "Authors seed once globally. Subsetting categories changes random shuffle and augmentation streams; logs confirm different selected normal exemplars for screw and transistor.",
+  "qwen_status": "NOT_RUN_SCRIPT_MISSING"
+}

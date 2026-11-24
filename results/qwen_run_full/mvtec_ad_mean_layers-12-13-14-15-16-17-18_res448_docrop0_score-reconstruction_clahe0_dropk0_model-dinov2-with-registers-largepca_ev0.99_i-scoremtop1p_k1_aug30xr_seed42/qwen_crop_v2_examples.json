@@ -1,0 +1,41 @@
+[
+  {
+    "kind": "correct_type",
+    "selection_rule": "first matching v2 row in the fixed sample",
+    "path": "datasets/mvtec-ad/bottle/test/broken_large/019.png",
+    "category": "bottle",
+    "defect_type": "broken_large",
+    "decision": "DEFECTIVE",
+    "pred_type": "broken_large",
+    "location": "top of the bottle opening",
+    "description": "The bottle has a large, visible crack in the upper portion of the opening, which appears to be a structural failure.",
+    "severity": "high",
+    "raw": "```json\n{\n  \"defect_type\": \"broken_large\",\n  \"location\": \"top of the bottle opening\",\n  \"description\": \"The bottle has a large, visible crack in the upper portion of the opening, which appears to be a structural failure.\",\n  \"severity\": \"high\"\n}\n```"
+  },
+  {
+    "kind": "wrong_type",
+    "selection_rule": "first matching v2 row in the fixed sample",
+    "path": "datasets/mvtec-ad/bottle/test/broken_large/014.png",
+    "category": "bottle",
+    "defect_type": "broken_large",
+    "decision": "DEFECTIVE",
+    "pred_type": "contamination",
+    "location": "inner wall of the bottle",
+    "description": "A white, crystalline residue is visible on the inner surface of the bottle's rim, indicating a contamination.",
+    "severity": "medium",
+    "raw": "```json\n{\n  \"defect_type\": \"contamination\",\n  \"location\": \"inner wall of the bottle\",\n  \"description\": \"A white, crystalline residue is visible on the inner surface of the bottle's rim, indicating a contamination.\",\n  \"severity\": \"medium\"\n}\n```"
+  },
+  {
+    "kind": "normal_assigned_none",
+    "selection_rule": "first matching v2 row in the fixed sample",
+    "path": "datasets/mvtec-ad/bottle/test/good/016.png",
+    "category": "bottle",
+    "defect_type": "good",
+    "decision": "NORMAL",
+    "pred_type": "none",
+    "location": "bottle",
+    "description": "The image shows a bottle from a top-down perspective, with no visible defects such as cracks, contamination, or structural damage.",
+    "severity": "none",
+    "raw": "```json\n{\"defect_type\": \"none\", \"location\": \"bottle\", \"description\": \"The image shows a bottle from a top-down perspective, with no visible defects such as cracks, contamination, or structural damage.\", \"severity\": \"none\"}\n```"
+  }
+]

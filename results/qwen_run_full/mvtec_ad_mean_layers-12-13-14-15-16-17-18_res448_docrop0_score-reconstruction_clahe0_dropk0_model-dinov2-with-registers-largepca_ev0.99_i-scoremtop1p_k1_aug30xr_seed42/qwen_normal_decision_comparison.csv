@@ -1,0 +1,7 @@
+condition,detector_decision,n_normal_images,qwen_none,qwen_not_none
+v1_grounded,DEFECTIVE,9,0,9
+v1_grounded,NORMAL,11,11,0
+v1_ungrounded,DEFECTIVE,9,3,6
+v1_ungrounded,NORMAL,11,7,4
+v2_crop_grounded,DEFECTIVE,9,0,9
+v2_crop_grounded,NORMAL,11,9,2

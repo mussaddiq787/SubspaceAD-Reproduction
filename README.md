@@ -6,9 +6,18 @@
   </a>
 </p>
 
-This repository contains the official implementation of the paper:
+This repository contains a reproduction study and a Qwen3-VL explanation experiment based on the [official SubspaceAD implementation](https://github.com/CLendering/SubspaceAD).
 
 > [**SubspaceAD: Training-Free Few-Shot Anomaly Detection via Subspace Modeling (CVPR 2026)**](https://openaccess.thecvf.com/content/CVPR2026/html/Lendering_SubspaceAD_Training-Free_Few-Shot_Anomaly_Detection_via_Subspace_Modeling_CVPR_2026_paper.html)
+
+## Reproduction study
+
+The MVTec AD reproduction uses DINOv2-registers-large at 448 pixels. Its 1-shot run achieved 93.57% image AUROC and 97.21% pixel AUROC. The [lab notes](LAB_NOTES.md) document the k-shot ablation and the [Qwen evaluation report](reports/qwen_evaluation_results.md) covers the grounded, ungrounded, and original-image crop experiments. Saved benchmark tables, configurations, and Qwen answers are in [`results/`](results/).
+
+Download the dataset using the instructions below. Run `main.py` with `--save_intro_overlays` to regenerate the overlays used by `explain_qwen.py` and `make_qual_figure.py`. The [experiment protocol](reports/qwen_experiment_protocol.md) records the run settings.
+
+The [qualitative figure](report_figs/fig_qual.png) combines resized MVTec AD images and masks with generated heatmap overlays and score annotations. The crop previews in `results/` show resized full images and hotspot crops. The source images and masks are © 2019 MVTec Software GmbH. The figure and crop previews are shared under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). [MVTec AD dataset](https://www.mvtec.com/company/research/datasets/mvtec-ad)
+
 ---
 
 <p align="center"> <img src="assets/subspacead_overview.png" width="85%"> </p>

@@ -1,0 +1,11 @@
+{
+  "input_mode": "crop",
+  "full_image_size": 448,
+  "crop_image_size": 448,
+  "dtype": "torch.float16",
+  "gpu_name": "Quadro RTX 3000",
+  "device_total_bytes": 6017515520,
+  "peak_allocated_bytes": 4393509888,
+  "peak_reserved_bytes": 4441767936,
+  "note": "PyTorch peaks include model loading and generation, not all driver/display memory"
+}

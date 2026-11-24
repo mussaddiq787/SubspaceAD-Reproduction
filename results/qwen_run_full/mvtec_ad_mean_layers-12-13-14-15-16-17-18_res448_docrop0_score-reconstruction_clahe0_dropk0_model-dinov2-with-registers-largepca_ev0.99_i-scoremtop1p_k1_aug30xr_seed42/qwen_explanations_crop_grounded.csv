@@ -1,0 +1,441 @@
+category,path,defect_type,label,img_score,input_mode,full_image_size,crop_image_size,crop_margin_fraction_per_side,hotspot_bbox_overlay,crop_bbox_overlay,crop_bbox_original,hotspot_changed_pixels,crop_fallback,crop_area_fraction,threshold,decision,pred_type,correct_type,location,description,severity,raw
+bottle,datasets/mvtec-ad/bottle/test/broken_large/019.png,broken_large,1,6.030172824859619,crop,448,448,0.15,"[80, 66, 397, 408]","[32, 14, 445, 448]","[64, 28, 894, 900]",45769,,0.8935308641975309,3.7206685543060303,DEFECTIVE,broken_large,True,top of the bottle opening,"The bottle has a large, visible crack in the upper portion of the opening, which appears to be a structural failure.",high,"```json
+{
+  ""defect_type"": ""broken_large"",
+  ""location"": ""top of the bottle opening"",
+  ""description"": ""The bottle has a large, visible crack in the upper portion of the opening, which appears to be a structural failure."",
+  ""severity"": ""high""
+}
+```"
+bottle,datasets/mvtec-ad/bottle/test/broken_large/005.png,broken_large,1,6.471988201141357,crop,448,448,0.15,"[64, 73, 388, 404]","[15, 23, 437, 448]","[30, 46, 878, 900]",17890,,0.8940641975308642,3.7206685543060303,DEFECTIVE,broken_large,True,top of the bottle,"The bottle has a large, visible crack in the upper portion of the neck, extending from the rim down into the body.",high,"```json
+{
+  ""defect_type"": ""broken_large"",
+  ""location"": ""top of the bottle"",
+  ""description"": ""The bottle has a large, visible crack in the upper portion of the neck, extending from the rim down into the body."",
+  ""severity"": ""high""
+}
+```"
+bottle,datasets/mvtec-ad/bottle/test/broken_large/014.png,broken_large,1,8.715653419494629,crop,448,448,0.15,"[80, 188, 240, 369]","[56, 160, 264, 397]","[112, 321, 531, 798]",12015,,0.24674444444444443,3.7206685543060303,DEFECTIVE,contamination,False,inner wall of the bottle,"A white, crystalline residue is visible on the inner surface of the bottle's rim, indicating a contamination.",medium,"```json
+{
+  ""defect_type"": ""contamination"",
+  ""location"": ""inner wall of the bottle"",
+  ""description"": ""A white, crystalline residue is visible on the inner surface of the bottle's rim, indicating a contamination."",
+  ""severity"": ""medium""
+}
+```"
+bottle,datasets/mvtec-ad/bottle/test/broken_large/004.png,broken_large,1,7.48371410369873,crop,448,448,0.15,"[66, 71, 292, 378]","[32, 24, 326, 425]","[64, 48, 655, 854]",14440,,0.5880814814814814,3.7206685543060303,DEFECTIVE,broken_small,False,top edge of the bottle,"A small, irregularly shaped crack is visible on the upper portion of the bottle's rim, extending from the top edge inward.",medium,"```json
+{
+  ""defect_type"": ""broken_small"",
+  ""location"": ""top edge of the bottle"",
+  ""description"": ""A small, irregularly shaped crack is visible on the upper portion of the bottle's rim, extending from the top edge inward."",
+  ""severity"": ""medium""
+}
+```"
+bottle,datasets/mvtec-ad/bottle/test/broken_large/009.png,broken_large,1,5.66488790512085,crop,448,448,0.15,"[62, 52, 396, 395]","[11, 0, 447, 447]","[22, 0, 898, 898]",37318,,0.9711703703703704,3.7206685543060303,DEFECTIVE,broken_small,False,top of the bottle,"a small, irregular crack is visible on the upper portion of the bottle's rim.",medium,"```json
+{""defect_type"": ""broken_small"", ""location"": ""top of the bottle"", ""description"": ""a small, irregular crack is visible on the upper portion of the bottle's rim."", ""severity"": ""medium""}
+```"
+bottle,datasets/mvtec-ad/bottle/test/broken_small/009.png,broken_small,1,6.398532867431641,crop,448,448,0.15,"[71, 155, 374, 381]","[25, 121, 420, 415]","[50, 243, 844, 834]",8761,,0.5793259259259259,3.7206685543060303,DEFECTIVE,broken_small,True,bottom left of the bottle opening,"A small, irregularly shaped piece of material is visible on the inner surface of the bottle's opening, appearing to be a fragment of the bottle's material.",medium,"```json
+{
+  ""defect_type"": ""broken_small"",
+  ""location"": ""bottom left of the bottle opening"",
+  ""description"": ""A small, irregularly shaped piece of material is visible on the inner surface of the bottle's opening, appearing to be a fragment of the bottle's material."",
+  ""severity"": ""medium""
+}
+```"
+bottle,datasets/mvtec-ad/bottle/test/broken_small/003.png,broken_small,1,7.065295696258545,crop,448,448,0.15,"[62, 72, 377, 395]","[14, 23, 425, 444]","[28, 46, 854, 892]",25853,,0.8627111111111111,3.7206685543060303,DEFECTIVE,broken_small,True,bottle opening,"The bottle has a small, irregular break or chip on the rim of the opening, visible as a minor fracture in the material.",medium,"```json
+{""defect_type"": ""broken_small"", ""location"": ""bottle opening"", ""description"": ""The bottle has a small, irregular break or chip on the rim of the opening, visible as a minor fracture in the material."", ""severity"": ""medium""}
+```"
+bottle,datasets/mvtec-ad/bottle/test/broken_small/010.png,broken_small,1,7.063823223114014,crop,448,448,0.15,"[177, 69, 382, 281]","[146, 37, 413, 313]","[293, 74, 830, 629]",14999,,0.36794444444444446,3.7206685543060303,DEFECTIVE,broken_small,True,top rim of the bottle,"A small, irregularly shaped chip or crack is visible on the upper rim of the bottle's opening.",medium,"```json
+{
+  ""defect_type"": ""broken_small"",
+  ""location"": ""top rim of the bottle"",
+  ""description"": ""A small, irregularly shaped chip or crack is visible on the upper rim of the bottle's opening."",
+  ""severity"": ""medium""
+}
+```"
+bottle,datasets/mvtec-ad/bottle/test/broken_small/015.png,broken_small,1,5.267971992492676,crop,448,448,0.15,"[58, 51, 390, 421]","[8, 0, 440, 448]","[16, 0, 884, 900]",52409,,0.9644444444444444,3.7206685543060303,DEFECTIVE,broken_small,True,top rim of the bottle,"A small, irregularly shaped chip or crack is visible on the upper rim of the bottle's opening.",medium,"```json
+{
+  ""defect_type"": ""broken_small"",
+  ""location"": ""top rim of the bottle"",
+  ""description"": ""A small, irregularly shaped chip or crack is visible on the upper rim of the bottle's opening."",
+  ""severity"": ""medium""
+}
+```"
+bottle,datasets/mvtec-ad/bottle/test/broken_small/016.png,broken_small,1,6.519289493560791,crop,448,448,0.15,"[115, 94, 374, 224]","[76, 74, 413, 244]","[152, 148, 830, 491]",7910,,0.2871037037037037,3.7206685543060303,DEFECTIVE,broken_small,True,right side of the bottle opening,"A small, irregularly shaped chip or crack is visible on the surface of the bottle's rim, near the right edge.",medium,"```json
+{
+  ""defect_type"": ""broken_small"",
+  ""location"": ""right side of the bottle opening"",
+  ""description"": ""A small, irregularly shaped chip or crack is visible on the surface of the bottle's rim, near the right edge."",
+  ""severity"": ""medium""
+}
+```"
+bottle,datasets/mvtec-ad/bottle/test/contamination/002.png,contamination,1,5.423447608947754,crop,448,448,0.15,"[55, 51, 397, 407]","[3, 0, 448, 448]","[6, 0, 900, 900]",45466,,0.9933333333333333,3.7206685543060303,DEFECTIVE,broken_small,False,top,"The bottle has a small, circular crack on the top surface, visible as a thin, linear fracture.",medium,"```json
+{""defect_type"": ""broken_small"", ""location"": ""top"", ""description"": ""The bottle has a small, circular crack on the top surface, visible as a thin, linear fracture."", ""severity"": ""medium""}
+```"
+bottle,datasets/mvtec-ad/bottle/test/contamination/010.png,contamination,1,7.384744167327881,crop,448,448,0.15,"[81, 143, 312, 367]","[46, 109, 347, 401]","[92, 218, 698, 806]",14832,,0.4399111111111111,3.7206685543060303,DEFECTIVE,broken_small,False,center,"A small, circular defect is visible in the center of the lens, appearing as a dark, irregularly shaped area.",medium,"```json
+{""defect_type"": ""broken_small"", ""location"": ""center"", ""description"": ""A small, circular defect is visible in the center of the lens, appearing as a dark, irregularly shaped area."", ""severity"": ""medium""}
+```"
+bottle,datasets/mvtec-ad/bottle/test/contamination/007.png,contamination,1,9.280580520629885,crop,448,448,0.15,"[86, 82, 411, 448]","[37, 27, 448, 448]","[74, 54, 900, 900]",23292,,0.8627111111111111,3.7206685543060303,DEFECTIVE,broken_small,False,bottle,"A small, thin, twisted fiber or strand is visible protruding from the opening of the bottle, appearing to be a broken piece of the original material.",medium,"```json
+{""defect_type"": ""broken_small"", ""location"": ""bottle"", ""description"": ""A small, thin, twisted fiber or strand is visible protruding from the opening of the bottle, appearing to be a broken piece of the original material."", ""severity"": ""medium""}
+```"
+bottle,datasets/mvtec-ad/bottle/test/contamination/012.png,contamination,1,4.18203592300415,crop,448,448,0.15,"[68, 40, 398, 404]","[18, 0, 448, 448]","[36, 0, 900, 900]",61732,,0.96,3.7206685543060303,DEFECTIVE,broken_small,False,top,"The bottle has a small, circular crack on the top surface, visible as a thin line in the center of the image.",medium,"```json
+{""defect_type"": ""broken_small"", ""location"": ""top"", ""description"": ""The bottle has a small, circular crack on the top surface, visible as a thin line in the center of the image."", ""severity"": ""medium""}
+```"
+bottle,datasets/mvtec-ad/bottle/test/contamination/013.png,contamination,1,5.97918701171875,crop,448,448,0.15,"[0, 145, 378, 279]","[0, 124, 435, 300]","[0, 249, 874, 603]",19327,,0.38197037037037035,3.7206685543060303,DEFECTIVE,broken_small,False,bottle,"A small, irregular break is visible on the side of the bottle's body, near the rim.",medium,"```json
+{""defect_type"": ""broken_small"", ""location"": ""bottle"", ""description"": ""A small, irregular break is visible on the side of the bottle's body, near the rim."", ""severity"": ""medium""}
+```"
+bottle,datasets/mvtec-ad/bottle/test/good/016.png,good,0,3.025255918502808,crop,448,448,0.15,"[49, 29, 400, 428]","[0, 0, 448, 448]","[0, 0, 900, 900]",76527,,1.0,3.7206685543060303,NORMAL,none,True,bottle,"The image shows a bottle from a top-down perspective, with no visible defects such as cracks, contamination, or structural damage.",none,"```json
+{""defect_type"": ""none"", ""location"": ""bottle"", ""description"": ""The image shows a bottle from a top-down perspective, with no visible defects such as cracks, contamination, or structural damage."", ""severity"": ""none""}
+```"
+bottle,datasets/mvtec-ad/bottle/test/good/019.png,good,0,2.990494728088379,crop,448,448,0.15,"[36, 34, 418, 424]","[0, 0, 448, 448]","[0, 0, 900, 900]",73638,,1.0,3.7206685543060303,NORMAL,none,True,bottle,"The image shows a bottle from a top-down perspective, with no visible defects such as cracks, contamination, or structural damage.",none,"```json
+{""defect_type"": ""none"", ""location"": ""bottle"", ""description"": ""The image shows a bottle from a top-down perspective, with no visible defects such as cracks, contamination, or structural damage."", ""severity"": ""none""}
+```"
+bottle,datasets/mvtec-ad/bottle/test/good/011.png,good,0,2.8657920360565186,crop,448,448,0.15,"[53, 31, 406, 425]","[0, 0, 448, 448]","[0, 0, 900, 900]",76776,,1.0,3.7206685543060303,NORMAL,none,True,bottle,"The image shows a bottle viewed from above, with no visible defects such as cracks, contamination, or structural damage.",none,"```json
+{""defect_type"": ""none"", ""location"": ""bottle"", ""description"": ""The image shows a bottle viewed from above, with no visible defects such as cracks, contamination, or structural damage."", ""severity"": ""none""}
+```"
+bottle,datasets/mvtec-ad/bottle/test/good/001.png,good,0,3.5000760555267334,crop,448,448,0.15,"[51, 26, 383, 423]","[1, 0, 433, 448]","[2, 0, 870, 900]",48122,,0.9644444444444444,3.7206685543060303,NORMAL,none,True,bottle,"The image shows a bottle with a clear, unblemished surface and no visible defects.",none,"```json
+{""defect_type"": ""none"", ""location"": ""bottle"", ""description"": ""The image shows a bottle with a clear, unblemished surface and no visible defects."", ""severity"": ""none""}
+```"
+bottle,datasets/mvtec-ad/bottle/test/good/000.png,good,0,2.667163848876953,crop,448,448,0.15,"[43, 47, 394, 441]","[0, 0, 447, 448]","[0, 0, 898, 900]",78380,,0.9977777777777778,3.7206685543060303,NORMAL,none,True,bottle,"The image shows a bottle viewed from above, with no visible defects such as cracks, contamination, or structural damage.",none,"```json
+{""defect_type"": ""none"", ""location"": ""bottle"", ""description"": ""The image shows a bottle viewed from above, with no visible defects such as cracks, contamination, or structural damage."", ""severity"": ""none""}
+```"
+cable,datasets/mvtec-ad/cable/test/bent_wire/010.png,bent_wire,1,3.430816173553467,crop,448,448,0.15,"[28, 0, 406, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",31571,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The inner insulation of the cable has been cut, exposing the conductive wire.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The inner insulation of the cable has been cut, exposing the conductive wire."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/bent_wire/011.png,bent_wire,1,3.596566915512085,crop,448,448,0.15,"[108, 0, 448, 378]","[57, 0, 448, 435]","[130, 0, 1024, 995]",44880,,0.8483219146728516,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/bent_wire/009.png,bent_wire,1,3.166630983352661,crop,448,448,0.15,"[49, 112, 448, 448]","[0, 61, 448, 448]","[0, 139, 1024, 1024]",21858,,0.8642578125,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The inner insulation of the cable has been cut, exposing the copper wires inside.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The inner insulation of the cable has been cut, exposing the copper wires inside."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/bent_wire/001.png,bent_wire,1,3.371386766433716,crop,448,448,0.15,"[99, 103, 329, 320]","[64, 70, 364, 353]","[146, 160, 832, 807]",21585,,0.4232807159423828,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,image 2,"The inner insulation of the cable has been cut, exposing the copper wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""image 2"", ""description"": ""The inner insulation of the cable has been cut, exposing the copper wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/bent_wire/000.png,bent_wire,1,2.853568315505981,crop,448,448,0.15,"[80, 0, 321, 370]","[43, 0, 358, 426]","[98, 0, 819, 974]",28611,,0.6697216033935547,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The inner insulation of the cable has been cut, exposing the internal conductors.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The inner insulation of the cable has been cut, exposing the internal conductors."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/cable_swap/000.png,cable_swap,1,2.591604709625244,crop,448,448,0.15,"[0, 8, 367, 437]","[0, 0, 423, 448]","[0, 0, 967, 1024]",21381,,0.9443359375,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a cut in the inner insulation layer, exposing the conductive wires.",medium,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a cut in the inner insulation layer, exposing the conductive wires."", ""severity"": ""medium""}
+```"
+cable,datasets/mvtec-ad/cable/test/cable_swap/011.png,cable_swap,1,2.6027991771698,crop,448,448,0.15,"[31, 46, 448, 418]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",20508,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, exposing the conductive wires.",medium,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, exposing the conductive wires."", ""severity"": ""medium""}
+```"
+cable,datasets/mvtec-ad/cable/test/cable_swap/002.png,cable_swap,1,2.286761522293091,crop,448,448,0.15,"[44, 39, 424, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",37686,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,center,"The inner insulation of the cable has been cut, exposing the conductive wire.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""center"", ""description"": ""The inner insulation of the cable has been cut, exposing the conductive wire."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/cable_swap/010.png,cable_swap,1,2.323310375213623,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",29998,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a cut in the inner insulation, exposing the conductive wire and the inner insulation layer.",medium,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a cut in the inner insulation, exposing the conductive wire and the inner insulation layer."", ""severity"": ""medium""}
+```"
+cable,datasets/mvtec-ad/cable/test/cable_swap/008.png,cable_swap,1,2.147550582885742,crop,448,448,0.15,"[0, 0, 439, 440]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",32763,,1.0,2.183403730392456,NORMAL,none,False,cable,The cable appears to be in normal condition with no visible defects.,none,"```json
+{""defect_type"": ""none"", ""location"": ""cable"", ""description"": ""The cable appears to be in normal condition with no visible defects."", ""severity"": ""none""}
+```"
+cable,datasets/mvtec-ad/cable/test/combined/000.png,combined,1,3.1343801021575928,crop,448,448,0.15,"[86, 66, 448, 448]","[31, 8, 448, 448]","[70, 18, 1024, 1024]",26966,,0.9152641296386719,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a cut in the inner insulation layer, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a cut in the inner insulation layer, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/combined/001.png,combined,1,3.3069186210632324,crop,448,448,0.15,"[92, 80, 312, 415]","[59, 29, 345, 448]","[134, 66, 789, 1024]",26790,,0.5984210968017578,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,bottom,"The inner insulation of the cable has been cut, exposing the copper wires inside.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""bottom"", ""description"": ""The inner insulation of the cable has been cut, exposing the copper wires inside."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/combined/007.png,combined,1,2.360565423965454,crop,448,448,0.15,"[0, 0, 438, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",33843,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a cut in the inner insulation layer, exposing the internal conductors.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a cut in the inner insulation layer, exposing the internal conductors."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/combined/008.png,combined,1,3.619180917739868,crop,448,448,0.15,"[107, 13, 448, 427]","[55, 0, 448, 448]","[125, 0, 1024, 1024]",30285,,0.8779296875,2.183403730392456,DEFECTIVE,poke_insulation,False,center,"The cable has a visible hole in the insulation, which is a defect in the outer insulation layer.",high,"```json
+{""defect_type"": ""poke_insulation"", ""location"": ""center"", ""description"": ""The cable has a visible hole in the insulation, which is a defect in the outer insulation layer."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/combined/006.png,combined,1,2.544983148574829,crop,448,448,0.15,"[0, 0, 418, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",29669,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The inner insulation of the cable has been cut, exposing the internal conductors.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The inner insulation of the cable has been cut, exposing the internal conductors."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/cut_inner_insulation/010.png,cut_inner_insulation,1,2.6171305179595947,crop,448,448,0.15,"[110, 69, 448, 448]","[59, 12, 448, 448]","[134, 27, 1024, 1024]",32708,,0.8462238311767578,2.183403730392456,DEFECTIVE,cut_inner_insulation,True,cable,"The cable has a cut in the inner insulation layer, exposing the conductive wire.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a cut in the inner insulation layer, exposing the conductive wire."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/cut_inner_insulation/004.png,cut_inner_insulation,1,2.595547914505005,crop,448,448,0.15,"[97, 67, 448, 448]","[44, 9, 448, 448]","[100, 20, 1024, 1024]",34360,,0.8847198486328125,2.183403730392456,DEFECTIVE,cut_inner_insulation,True,cable,"The cable has a cut in the inner insulation layer, exposing the internal conductors.",medium,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a cut in the inner insulation layer, exposing the internal conductors."", ""severity"": ""medium""}
+```"
+cable,datasets/mvtec-ad/cable/test/cut_inner_insulation/013.png,cut_inner_insulation,1,2.636826753616333,crop,448,448,0.15,"[110, 40, 448, 419]","[59, 0, 448, 448]","[134, 0, 1024, 1024]",29771,,0.869140625,2.183403730392456,DEFECTIVE,cut_inner_insulation,True,cable,"The cable has a cut in the inner insulation, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a cut in the inner insulation, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/cut_inner_insulation/001.png,cut_inner_insulation,1,2.3260366916656494,crop,448,448,0.15,"[0, 81, 426, 448]","[0, 25, 448, 448]","[0, 57, 1024, 1024]",31980,,0.9443359375,2.183403730392456,DEFECTIVE,cut_inner_insulation,True,cable,"The cable has a cut in the inner insulation layer, exposing the internal conductors.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a cut in the inner insulation layer, exposing the internal conductors."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/cut_inner_insulation/011.png,cut_inner_insulation,1,2.56772255897522,crop,448,448,0.15,"[63, 129, 417, 382]","[9, 91, 448, 420]","[20, 208, 1024, 960]",32881,,0.72003173828125,2.183403730392456,DEFECTIVE,cut_inner_insulation,True,cable,"The cable has a cut in the inner insulation, exposing the conductive wires.",medium,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a cut in the inner insulation, exposing the conductive wires."", ""severity"": ""medium""}
+```"
+cable,datasets/mvtec-ad/cable/test/cut_outer_insulation/008.png,cut_outer_insulation,1,2.4960777759552,crop,448,448,0.15,"[0, 0, 448, 440]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",43116,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, exposing the conductive wire.",medium,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, exposing the conductive wire."", ""severity"": ""medium""}
+```"
+cable,datasets/mvtec-ad/cable/test/cut_outer_insulation/000.png,cut_outer_insulation,1,2.387594223022461,crop,448,448,0.15,"[30, 0, 448, 389]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",37253,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, which is evident from the exposed inner core and the broken section of the outer sheath.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, which is evident from the exposed inner core and the broken section of the outer sheath."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/cut_outer_insulation/005.png,cut_outer_insulation,1,2.663222312927246,crop,448,448,0.15,"[0, 85, 448, 448]","[0, 30, 448, 448]","[0, 68, 1024, 1024]",24684,,0.93359375,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,center,"The inner insulation of the cable has been cut, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""center"", ""description"": ""The inner insulation of the cable has been cut, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/cut_outer_insulation/002.png,cut_outer_insulation,1,2.815030097961426,crop,448,448,0.15,"[0, 5, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",29295,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/cut_outer_insulation/007.png,cut_outer_insulation,1,2.258605718612671,crop,448,448,0.15,"[0, 0, 432, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",32784,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/good/053.png,good,0,2.3827569484710693,crop,448,448,0.15,"[72, 37, 339, 334]","[31, 0, 380, 379]","[70, 0, 869, 867]",22386,,0.6606416702270508,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/good/037.png,good,0,2.3139381408691406,crop,448,448,0.15,"[0, 0, 437, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",32949,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The inner insulation of the cable has been cut, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The inner insulation of the cable has been cut, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/good/035.png,good,0,2.0644373893737797,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",27712,,1.0,2.183403730392456,NORMAL,none,True,cable,"The image shows a cable with three distinct, intact sections, each containing a central metallic core. The cable appears to be in good condition with no visible signs of damage or defects.",none,"```json
+{""defect_type"": ""none"", ""location"": ""cable"", ""description"": ""The image shows a cable with three distinct, intact sections, each containing a central metallic core. The cable appears to be in good condition with no visible signs of damage or defects."", ""severity"": ""none""}
+```"
+cable,datasets/mvtec-ad/cable/test/good/022.png,good,0,2.436601400375366,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",37063,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/good/005.png,good,0,2.1406726837158203,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",30235,,1.0,2.183403730392456,NORMAL,none,True,cable,"The image shows a cross-section of a cable with three distinct insulated conductors, each with a metallic core. The insulation appears intact and the conductors are properly seated within the sheath. There are no visible signs of damage, such as bent wires, missing wires, or cut insulation.",none,"```json
+{""defect_type"": ""none"", ""location"": ""cable"", ""description"": ""The image shows a cross-section of a cable with three distinct insulated conductors, each with a metallic core. The insulation appears intact and the conductors are properly seated within the sheath. There are no visible signs of damage, such as bent wires, missing wires, or cut insulation."", ""severity"": ""none""}
+```"
+cable,datasets/mvtec-ad/cable/test/missing_cable/008.png,missing_cable,1,2.7604405879974365,crop,448,448,0.15,"[0, 0, 448, 404]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",38857,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, which is evident from the exposed, dark, and irregularly shaped area within the cable's core.",medium,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, which is evident from the exposed, dark, and irregularly shaped area within the cable's core."", ""severity"": ""medium""}
+```"
+cable,datasets/mvtec-ad/cable/test/missing_cable/002.png,missing_cable,1,2.444854736328125,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",31978,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, exposing the copper wire inside.",medium,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, exposing the copper wire inside."", ""severity"": ""medium""}
+```"
+cable,datasets/mvtec-ad/cable/test/missing_cable/009.png,missing_cable,1,2.7701525688171387,crop,448,448,0.15,"[0, 0, 432, 405]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",38150,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The inner insulation of the cable has been cut, exposing the conductive wire.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The inner insulation of the cable has been cut, exposing the conductive wire."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/missing_cable/001.png,missing_cable,1,2.6257495880126958,crop,448,448,0.15,"[89, 95, 325, 361]","[53, 55, 361, 401]","[121, 125, 826, 917]",27737,,0.5324935913085938,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a cut in the inner insulation layer, exposing the copper wire.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a cut in the inner insulation layer, exposing the copper wire."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/missing_cable/000.png,missing_cable,1,2.8330116271972656,crop,448,448,0.15,"[0, 0, 448, 431]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",27313,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The inner insulation of the cable has been cut, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The inner insulation of the cable has been cut, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/missing_wire/009.png,missing_wire,1,2.743567943572998,crop,448,448,0.15,"[99, 0, 448, 380]","[46, 0, 448, 437]","[105, 0, 1024, 999]",22080,,0.8755502700805664,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, exposing the internal conductors.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, exposing the internal conductors."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/missing_wire/007.png,missing_wire,1,2.18556547164917,crop,448,448,0.15,"[25, 0, 448, 327]","[0, 0, 448, 377]","[0, 0, 1024, 862]",27060,,0.841796875,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a cut in the inner insulation, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a cut in the inner insulation, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/missing_wire/002.png,missing_wire,1,2.561977863311768,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",24861,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The inner insulation of the cable has been cut, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The inner insulation of the cable has been cut, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/missing_wire/006.png,missing_wire,1,2.1234824657440186,crop,448,448,0.15,"[14, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",32514,,1.0,2.183403730392456,NORMAL,none,False,cable,"The image shows a cable with three distinct inner conductors, each with a metallic core, and the outer insulation appears intact. There are no visible signs of damage such as bent wires, cable swaps, or missing parts.",none,"```json
+{""defect_type"": ""none"", ""location"": ""cable"", ""description"": ""The image shows a cable with three distinct inner conductors, each with a metallic core, and the outer insulation appears intact. There are no visible signs of damage such as bent wires, cable swaps, or missing parts."", ""severity"": ""none""}
+```"
+cable,datasets/mvtec-ad/cable/test/missing_wire/008.png,missing_wire,1,2.357874870300293,crop,448,448,0.15,"[26, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",37885,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a cut in the inner insulation layer, exposing the conductive wire.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a cut in the inner insulation layer, exposing the conductive wire."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/poke_insulation/004.png,poke_insulation,1,1.9092234373092647,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",37119,,1.0,2.183403730392456,NORMAL,none,False,cable,The cable appears to be in normal condition with no visible defects.,none,"```json
+{""defect_type"": ""none"", ""location"": ""cable"", ""description"": ""The cable appears to be in normal condition with no visible defects."", ""severity"": ""none""}
+```"
+cable,datasets/mvtec-ad/cable/test/poke_insulation/005.png,poke_insulation,1,2.5175445079803467,crop,448,448,0.15,"[15, 0, 433, 421]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",31779,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, exposing the conductive wires.",medium,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, exposing the conductive wires."", ""severity"": ""medium""}
+```"
+cable,datasets/mvtec-ad/cable/test/poke_insulation/009.png,poke_insulation,1,2.8366453647613525,crop,448,448,0.15,"[57, 0, 435, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",32781,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/poke_insulation/008.png,poke_insulation,1,2.2602055072784424,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",45129,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The inner insulation of the cable has been cut, exposing the conductive wires.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The inner insulation of the cable has been cut, exposing the conductive wires."", ""severity"": ""high""}
+```"
+cable,datasets/mvtec-ad/cable/test/poke_insulation/007.png,poke_insulation,1,2.6767241954803467,crop,448,448,0.15,"[0, 0, 448, 435]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",33590,,1.0,2.183403730392456,DEFECTIVE,cut_inner_insulation,False,cable,"The cable has a visible cut in the inner insulation layer, exposing the copper wire inside.",high,"```json
+{""defect_type"": ""cut_inner_insulation"", ""location"": ""cable"", ""description"": ""The cable has a visible cut in the inner insulation layer, exposing the copper wire inside."", ""severity"": ""high""}
+```"
+screw,datasets/mvtec-ad/screw/test/good/032.png,good,0,2.793491840362549,crop,448,448,0.15,"[18, 0, 448, 334]","[0, 0, 448, 385]","[0, 0, 1024, 880]",29451,,0.859375,2.107628107070923,DEFECTIVE,thread_side,False,threaded portion,"The screw exhibits a noticeable irregularity in the thread side, where the threads appear to be uneven or misaligned, suggesting a manufacturing defect.",medium,"```json
+{""defect_type"": ""thread_side"", ""location"": ""threaded portion"", ""description"": ""The screw exhibits a noticeable irregularity in the thread side, where the threads appear to be uneven or misaligned, suggesting a manufacturing defect."", ""severity"": ""medium""}
+```"
+screw,datasets/mvtec-ad/screw/test/good/005.png,good,0,2.386532783508301,crop,448,448,0.15,"[15, 0, 448, 431]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",36478,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"A small, linear scratch is visible on the head of the screw, located on the flat surface of the screw's head.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""A small, linear scratch is visible on the head of the screw, located on the flat surface of the screw's head."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/good/004.png,good,0,2.5961639881134038,crop,448,448,0.15,"[0, 8, 393, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",32912,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"The screw head shows a visible scratch on its surface, indicating a physical defect.",medium,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""The screw head shows a visible scratch on its surface, indicating a physical defect."", ""severity"": ""medium""}
+```"
+screw,datasets/mvtec-ad/screw/test/good/000.png,good,0,2.221063137054444,crop,448,448,0.15,"[0, 0, 418, 438]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",34502,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"The screw head shows a visible scratch on its surface, indicating a physical defect.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""The screw head shows a visible scratch on its surface, indicating a physical defect."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/good/018.png,good,0,2.6890268325805664,crop,448,448,0.15,"[0, 0, 436, 440]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",34926,,1.0,2.107628107070923,DEFECTIVE,thread_side,False,thread_side,"The screw has a visible, irregular thread side, indicating a manufacturing defect.",medium,"```json
+{""defect_type"": ""thread_side"", ""location"": ""thread_side"", ""description"": ""The screw has a visible, irregular thread side, indicating a manufacturing defect."", ""severity"": ""medium""}
+```"
+screw,datasets/mvtec-ad/screw/test/manipulated_front/008.png,manipulated_front,1,2.7164466381073,crop,448,448,0.15,"[148, 6, 348, 448]","[118, 0, 378, 448]","[269, 0, 864, 1024]",30774,,0.5810546875,2.107628107070923,DEFECTIVE,scratch_head,False,head,"The screw head shows a noticeable scratch on its surface, which is a linear defect on the flat top portion.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""The screw head shows a noticeable scratch on its surface, which is a linear defect on the flat top portion."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/manipulated_front/023.png,manipulated_front,1,2.498842239379883,crop,448,448,0.15,"[23, 8, 424, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",31854,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"The screw head shows a visible scratch on its surface, indicating a surface defect.",medium,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""The screw head shows a visible scratch on its surface, indicating a surface defect."", ""severity"": ""medium""}
+```"
+screw,datasets/mvtec-ad/screw/test/manipulated_front/004.png,manipulated_front,1,2.3371102809906006,crop,448,448,0.15,"[82, 15, 372, 419]","[38, 0, 416, 448]","[86, 0, 951, 1024]",29560,,0.8447265625,2.107628107070923,DEFECTIVE,thread_side,False,the side of the screw's thread,"the screw's thread shows a noticeable side wear or irregularity, indicating a potential manufacturing defect.",medium,"```json
+{""defect_type"": ""thread_side"", ""location"": ""the side of the screw's thread"", ""description"": ""the screw's thread shows a noticeable side wear or irregularity, indicating a potential manufacturing defect."", ""severity"": ""medium""}
+```"
+screw,datasets/mvtec-ad/screw/test/manipulated_front/021.png,manipulated_front,1,2.176875114440918,crop,448,448,0.15,"[31, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",48715,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"The screw head shows a visible scratch on its surface, indicating a physical defect.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""The screw head shows a visible scratch on its surface, indicating a physical defect."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/manipulated_front/014.png,manipulated_front,1,2.1576852798461914,crop,448,448,0.15,"[0, 0, 438, 422]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",34762,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"A small, shallow scratch is visible on the head of the screw, near the flat surface.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""A small, shallow scratch is visible on the head of the screw, near the flat surface."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/scratch_head/020.png,scratch_head,1,3.2735540866851807,crop,448,448,0.15,"[16, 17, 429, 301]","[0, 0, 448, 344]","[0, 0, 1024, 787]",27283,,0.7685546875,2.107628107070923,DEFECTIVE,scratch_head,True,head,"A small, linear scratch is visible on the flat head of the screw.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""A small, linear scratch is visible on the flat head of the screw."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/scratch_head/003.png,scratch_head,1,2.781416416168213,crop,448,448,0.15,"[94, 0, 313, 436]","[61, 0, 346, 448]","[139, 0, 791, 1024]",32910,,0.63671875,2.107628107070923,DEFECTIVE,scratch_head,True,head,The screw head shows a visible scratch on its top surface.,low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""The screw head shows a visible scratch on its top surface."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/scratch_head/012.png,scratch_head,1,2.637017011642456,crop,448,448,0.15,"[38, 0, 448, 408]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",40969,,1.0,2.107628107070923,DEFECTIVE,scratch_head,True,head,"A small, linear scratch is visible on the top surface of the screw's head.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""A small, linear scratch is visible on the top surface of the screw's head."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/scratch_head/005.png,scratch_head,1,3.074552059173584,crop,448,448,0.15,"[5, 10, 423, 351]","[0, 0, 448, 403]","[0, 0, 1024, 922]",31777,,0.900390625,2.107628107070923,DEFECTIVE,scratch_head,True,head,"A small, linear scratch is visible on the head of the screw, near the center of the flat top surface.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""A small, linear scratch is visible on the head of the screw, near the center of the flat top surface."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/scratch_head/016.png,scratch_head,1,2.64791202545166,crop,448,448,0.15,"[0, 0, 448, 418]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",35791,,1.0,2.107628107070923,DEFECTIVE,scratch_head,True,head,"a small, shallow scratch is visible on the head of the screw, near the center.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""a small, shallow scratch is visible on the head of the screw, near the center."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/scratch_neck/000.png,scratch_neck,1,2.3303651809692383,crop,448,448,0.15,"[0, 0, 413, 367]","[0, 0, 448, 423]","[0, 0, 1024, 967]",29738,,0.9443359375,2.107628107070923,DEFECTIVE,scratch_head,False,head,"A small, linear scratch is visible on the head of the screw, near the flat top surface.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""A small, linear scratch is visible on the head of the screw, near the flat top surface."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/scratch_neck/022.png,scratch_neck,1,2.8541760444641118,crop,448,448,0.15,"[30, 17, 404, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",28755,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"a small, linear scratch is visible on the head of the screw, near the flat tip.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""a small, linear scratch is visible on the head of the screw, near the flat tip."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/scratch_neck/019.png,scratch_neck,1,3.774282932281494,crop,448,448,0.15,"[16, 0, 435, 378]","[0, 0, 448, 435]","[0, 0, 1024, 995]",27514,,0.9716796875,2.107628107070923,DEFECTIVE,scratch_head,False,head,"A small, shallow scratch is visible on the head of the screw, located near the center of the flat top surface.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""A small, shallow scratch is visible on the head of the screw, located near the center of the flat top surface."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/scratch_neck/006.png,scratch_neck,1,3.992697715759277,crop,448,448,0.15,"[153, 0, 448, 443]","[108, 0, 448, 448]","[246, 0, 1024, 1024]",32482,,0.759765625,2.107628107070923,DEFECTIVE,scratch_head,False,head,"a small, shallow scratch is visible on the flat head of the screw.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""a small, shallow scratch is visible on the flat head of the screw."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/scratch_neck/011.png,scratch_neck,1,2.7142579555511475,crop,448,448,0.15,"[0, 0, 448, 436]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",39181,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"A small, linear scratch is visible on the top surface of the screw's head.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""A small, linear scratch is visible on the top surface of the screw's head."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/thread_side/015.png,thread_side,1,2.592703342437744,crop,448,448,0.15,"[23, 0, 448, 391]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",41446,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"A small, linear scratch is visible on the head of the screw, near the center of the flat top surface.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""A small, linear scratch is visible on the head of the screw, near the center of the flat top surface."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/thread_side/019.png,thread_side,1,2.265233039855957,crop,448,448,0.15,"[0, 0, 397, 415]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",30375,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"a small, linear scratch is visible on the head of the screw, near the flat tip.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""a small, linear scratch is visible on the head of the screw, near the flat tip."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/thread_side/018.png,thread_side,1,2.5100765228271484,crop,448,448,0.15,"[76, 23, 417, 435]","[24, 0, 448, 448]","[54, 0, 1024, 1024]",30118,,0.947265625,2.107628107070923,DEFECTIVE,scratch_head,False,head,"The screw head shows a visible scratch on its surface, indicating a physical defect.",medium,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""The screw head shows a visible scratch on its surface, indicating a physical defect."", ""severity"": ""medium""}
+```"
+screw,datasets/mvtec-ad/screw/test/thread_side/012.png,thread_side,1,2.4849064350128174,crop,448,448,0.15,"[0, 0, 432, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",35952,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,The screw head shows a visible scratch on its surface.,low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""The screw head shows a visible scratch on its surface."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/thread_side/007.png,thread_side,1,2.581413984298706,crop,448,448,0.15,"[0, 0, 409, 380]","[0, 0, 448, 437]","[0, 0, 1024, 999]",30064,,0.9755859375,2.107628107070923,DEFECTIVE,scratch_head,False,head,"A small, shallow scratch is visible on the head of the screw, near the center of the flat top.",low,"```json
+{
+  ""defect_type"": ""scratch_head"",
+  ""location"": ""head"",
+  ""description"": ""A small, shallow scratch is visible on the head of the screw, near the center of the flat top."",
+  ""severity"": ""low""
+}
+```"
+screw,datasets/mvtec-ad/screw/test/thread_top/010.png,thread_top,1,2.862251281738281,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",40695,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"a small, shallow scratch is visible on the head of the screw, near the center of the flat top.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""a small, shallow scratch is visible on the head of the screw, near the center of the flat top."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/thread_top/000.png,thread_top,1,3.016103982925415,crop,448,448,0.15,"[30, 15, 448, 431]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",28875,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"a small, shallow scratch is visible on the head of the screw, near the center of the flat surface.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""a small, shallow scratch is visible on the head of the screw, near the center of the flat surface."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/thread_top/006.png,thread_top,1,3.168098211288452,crop,448,448,0.15,"[0, 7, 405, 395]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",29994,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"A small, shallow scratch is visible on the top surface of the screw's head.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""A small, shallow scratch is visible on the top surface of the screw's head."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/thread_top/013.png,thread_top,1,3.358779191970825,crop,448,448,0.15,"[28, 12, 335, 433]","[0, 0, 382, 448]","[0, 0, 874, 1024]",28972,,0.853515625,2.107628107070923,DEFECTIVE,scratch_head,False,head,"A small, linear scratch is visible on the top of the screw's head.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""A small, linear scratch is visible on the top of the screw's head."", ""severity"": ""low""}
+```"
+screw,datasets/mvtec-ad/screw/test/thread_top/012.png,thread_top,1,2.364492177963257,crop,448,448,0.15,"[0, 0, 401, 434]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",31246,,1.0,2.107628107070923,DEFECTIVE,scratch_head,False,head,"a small, shallow scratch is visible on the flat head of the screw.",low,"```json
+{""defect_type"": ""scratch_head"", ""location"": ""head"", ""description"": ""a small, shallow scratch is visible on the flat head of the screw."", ""severity"": ""low""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/bent_lead/005.png,bent_lead,1,8.943988800048828,crop,448,448,0.15,"[0, 19, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",44361,,1.0,6.754857540130615,DEFECTIVE,bent_lead,True,lower right lead,"The lead on the right side of the transistor is visibly bent, causing it to be misaligned with the other leads.",medium,"```json
+{
+  ""defect_type"": ""bent_lead"",
+  ""location"": ""lower right lead"",
+  ""description"": ""The lead on the right side of the transistor is visibly bent, causing it to be misaligned with the other leads."",
+  ""severity"": ""medium""
+}
+```"
+transistor,datasets/mvtec-ad/transistor/test/bent_lead/003.png,bent_lead,1,7.74972677230835,crop,448,448,0.15,"[13, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",52013,,1.0,6.754857540130615,DEFECTIVE,bent_lead,True,lower right lead,"The lead on the right side of the transistor is bent, causing it to be misaligned with the other leads.",medium,"```json
+{
+  ""defect_type"": ""bent_lead"",
+  ""location"": ""lower right lead"",
+  ""description"": ""The lead on the right side of the transistor is bent, causing it to be misaligned with the other leads."",
+  ""severity"": ""medium""
+}
+```"
+transistor,datasets/mvtec-ad/transistor/test/bent_lead/007.png,bent_lead,1,12.546390533447266,crop,448,448,0.15,"[0, 0, 448, 421]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",23048,,1.0,6.754857540130615,DEFECTIVE,bent_lead,True,lower right lead,"The lead on the right side of the transistor is bent, causing it to be misaligned with the other leads.",medium,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""lower right lead"", ""description"": ""The lead on the right side of the transistor is bent, causing it to be misaligned with the other leads."", ""severity"": ""medium""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/bent_lead/009.png,bent_lead,1,6.488159656524658,crop,448,448,0.15,"[0, 7, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",52699,,1.0,6.754857540130615,NORMAL,bent_lead,True,lower right lead,"The lead on the right side of the transistor is bent, causing a deviation from the expected straight shape.",medium,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""lower right lead"", ""description"": ""The lead on the right side of the transistor is bent, causing a deviation from the expected straight shape."", ""severity"": ""medium""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/bent_lead/002.png,bent_lead,1,7.733944892883301,crop,448,448,0.15,"[0, 0, 448, 439]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",43368,,1.0,6.754857540130615,DEFECTIVE,bent_lead,True,lower right lead,"The lead on the right side of the transistor is visibly bent, indicating a structural deformation.",medium,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""lower right lead"", ""description"": ""The lead on the right side of the transistor is visibly bent, indicating a structural deformation."", ""severity"": ""medium""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/cut_lead/001.png,cut_lead,1,6.021916389465332,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",56067,,1.0,6.754857540130615,NORMAL,none,False,center,The transistor appears to be in good condition with no visible defects.,none,"```json
+{""defect_type"": ""none"", ""location"": ""center"", ""description"": ""The transistor appears to be in good condition with no visible defects."", ""severity"": ""none""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/cut_lead/003.png,cut_lead,1,7.093379020690918,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",43276,,1.0,6.754857540130615,DEFECTIVE,bent_lead,False,lower right,"The lead on the right side of the transistor is visibly bent, indicating a structural deformation.",medium,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""lower right"", ""description"": ""The lead on the right side of the transistor is visibly bent, indicating a structural deformation."", ""severity"": ""medium""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/cut_lead/009.png,cut_lead,1,6.8728227615356445,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",44935,,1.0,6.754857540130615,DEFECTIVE,bent_lead,False,lower right lead,"The lead on the right side of the transistor is visibly bent, indicating a structural deformation.",medium,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""lower right lead"", ""description"": ""The lead on the right side of the transistor is visibly bent, indicating a structural deformation."", ""severity"": ""medium""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/cut_lead/008.png,cut_lead,1,6.754857540130615,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",58206,,1.0,6.754857540130615,DEFECTIVE,bent_lead,False,lower left,"The lead on the bottom left of the transistor is bent, causing it to be misaligned with the other leads.",medium,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""lower left"", ""description"": ""The lead on the bottom left of the transistor is bent, causing it to be misaligned with the other leads."", ""severity"": ""medium""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/cut_lead/005.png,cut_lead,1,7.0200724601745605,crop,448,448,0.15,"[0, 7, 440, 429]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",50996,,1.0,6.754857540130615,DEFECTIVE,bent_lead,False,lower right lead,"The rightmost lead of the transistor is visibly bent, causing a deviation from the intended straight alignment.",medium,"```json
+{
+  ""defect_type"": ""bent_lead"",
+  ""location"": ""lower right lead"",
+  ""description"": ""The rightmost lead of the transistor is visibly bent, causing a deviation from the intended straight alignment."",
+  ""severity"": ""medium""
+}
+```"
+transistor,datasets/mvtec-ad/transistor/test/damaged_case/007.png,damaged_case,1,7.0562663078308105,crop,448,448,0.15,"[0, 0, 442, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",45810,,1.0,6.754857540130615,DEFECTIVE,bent_lead,False,bottom,"The lead on the bottom right of the transistor is bent, causing it to be misaligned with the solder pads.",medium,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""bottom"", ""description"": ""The lead on the bottom right of the transistor is bent, causing it to be misaligned with the solder pads."", ""severity"": ""medium""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/damaged_case/002.png,damaged_case,1,6.867090702056885,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",51835,,1.0,6.754857540130615,DEFECTIVE,bent_lead,False,lower right,"The lead on the right side of the transistor is bent, causing a deviation from the expected straight shape.",medium,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""lower right"", ""description"": ""The lead on the right side of the transistor is bent, causing a deviation from the expected straight shape."", ""severity"": ""medium""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/damaged_case/009.png,damaged_case,1,8.526448249816895,crop,448,448,0.15,"[17, 23, 418, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",29563,,1.0,6.754857540130615,DEFECTIVE,bent_lead,False,lower right lead,"The lead on the right side of the transistor is visibly bent, causing it to be misaligned with the other leads.",medium,"```json
+{
+  ""defect_type"": ""bent_lead"",
+  ""location"": ""lower right lead"",
+  ""description"": ""The lead on the right side of the transistor is visibly bent, causing it to be misaligned with the other leads."",
+  ""severity"": ""medium""
+}
+```"
+transistor,datasets/mvtec-ad/transistor/test/damaged_case/003.png,damaged_case,1,6.41749382019043,crop,448,448,0.15,"[16, 0, 448, 412]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",47086,,1.0,6.754857540130615,NORMAL,bent_lead,False,lower right,"The lead on the right side of the transistor is bent, causing a deviation from the expected straight alignment.",medium,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""lower right"", ""description"": ""The lead on the right side of the transistor is bent, causing a deviation from the expected straight alignment."", ""severity"": ""medium""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/damaged_case/001.png,damaged_case,1,8.228619575500488,crop,448,448,0.15,"[53, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",46357,,1.0,6.754857540130615,DEFECTIVE,bent_lead,False,lower right lead,"The lead on the right side of the transistor is visibly bent, causing it to be misaligned with the other leads.",high,"```json
+{
+  ""defect_type"": ""bent_lead"",
+  ""location"": ""lower right lead"",
+  ""description"": ""The lead on the right side of the transistor is visibly bent, causing it to be misaligned with the other leads."",
+  ""severity"": ""high""
+}
+```"
+transistor,datasets/mvtec-ad/transistor/test/good/059.png,good,0,5.864897727966309,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",60303,,1.0,6.754857540130615,NORMAL,none,True,center,The transistor appears to be in normal condition with no visible defects.,none,"```json
+{""defect_type"": ""none"", ""location"": ""center"", ""description"": ""The transistor appears to be in normal condition with no visible defects."", ""severity"": ""none""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/good/003.png,good,0,6.465854644775391,crop,448,448,0.15,"[0, 0, 448, 404]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",62949,,1.0,6.754857540130615,NORMAL,none,True,center,The transistor appears to be in normal condition with no visible defects.,none,"```json
+{""defect_type"": ""none"", ""location"": ""center"", ""description"": ""The transistor appears to be in normal condition with no visible defects."", ""severity"": ""none""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/good/047.png,good,0,5.439011573791504,crop,448,448,0.15,"[0, 0, 448, 434]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",60297,,1.0,6.754857540130615,NORMAL,bent_lead,False,lower right,"The lead on the right side of the transistor is bent, causing a deviation from the expected straight alignment.",medium,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""lower right"", ""description"": ""The lead on the right side of the transistor is bent, causing a deviation from the expected straight alignment."", ""severity"": ""medium""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/good/016.png,good,0,6.256981372833252,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",62550,,1.0,6.754857540130615,NORMAL,bent_lead,False,lower right lead,"The lead on the right side of the transistor is visibly bent, indicating a structural deformation.",medium,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""lower right lead"", ""description"": ""The lead on the right side of the transistor is visibly bent, indicating a structural deformation."", ""severity"": ""medium""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/good/054.png,good,0,7.784451484680176,crop,448,448,0.15,"[0, 0, 419, 435]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",48947,,1.0,6.754857540130615,DEFECTIVE,bent_lead,False,lower right lead,"The lead on the right side of the transistor is visibly bent, deviating from the straight alignment of the other leads.",high,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""lower right lead"", ""description"": ""The lead on the right side of the transistor is visibly bent, deviating from the straight alignment of the other leads."", ""severity"": ""high""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/misplaced/008.png,misplaced,1,11.276309967041016,crop,448,448,0.15,"[0, 14, 448, 405]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",68722,,1.0,6.754857540130615,DEFECTIVE,bent_lead,False,the lower left lead,"The lower left lead of the transistor is visibly bent, deviating from its straight, original shape.",medium,"```json
+{
+  ""defect_type"": ""bent_lead"",
+  ""location"": ""the lower left lead"",
+  ""description"": ""The lower left lead of the transistor is visibly bent, deviating from its straight, original shape."",
+  ""severity"": ""medium""
+}
+```"
+transistor,datasets/mvtec-ad/transistor/test/misplaced/009.png,misplaced,1,9.99768352508545,crop,448,448,0.15,"[0, 9, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",55896,,1.0,6.754857540130615,DEFECTIVE,bent_lead,False,lower right,"The lead on the right side of the transistor is visibly bent, causing it to deviate from the straight alignment of the other leads.",high,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""lower right"", ""description"": ""The lead on the right side of the transistor is visibly bent, causing it to deviate from the straight alignment of the other leads."", ""severity"": ""high""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/misplaced/004.png,misplaced,1,8.35299015045166,crop,448,448,0.15,"[0, 0, 439, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",57660,,1.0,6.754857540130615,DEFECTIVE,bent_lead,False,center,"The central lead of the transistor is visibly bent, causing a deviation from the intended straight alignment.",medium,"```json
+{
+  ""defect_type"": ""bent_lead"",
+  ""location"": ""center"",
+  ""description"": ""The central lead of the transistor is visibly bent, causing a deviation from the intended straight alignment."",
+  ""severity"": ""medium""
+}
+```"
+transistor,datasets/mvtec-ad/transistor/test/misplaced/003.png,misplaced,1,6.777267456054688,crop,448,448,0.15,"[0, 0, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",57915,,1.0,6.754857540130615,DEFECTIVE,none,False,image_1,"The image shows a transistor with a perforated metal casing. The surface appears to be intact with no visible signs of damage, bending, or misalignment. The detector flagged an anomaly, but the visual inspection confirms the object is in a normal state.",none,"```json
+{""defect_type"": ""none"", ""location"": ""image_1"", ""description"": ""The image shows a transistor with a perforated metal casing. The surface appears to be intact with no visible signs of damage, bending, or misalignment. The detector flagged an anomaly, but the visual inspection confirms the object is in a normal state."", ""severity"": ""none""}
+```"
+transistor,datasets/mvtec-ad/transistor/test/misplaced/007.png,misplaced,1,11.159505844116213,crop,448,448,0.15,"[0, 43, 448, 448]","[0, 0, 448, 448]","[0, 0, 1024, 1024]",64518,,1.0,6.754857540130615,DEFECTIVE,bent_lead,False,lower right lead,"The lead on the right side of the transistor is bent, causing it to be misaligned with the other leads.",medium,"```json
+{""defect_type"": ""bent_lead"", ""location"": ""lower right lead"", ""description"": ""The lead on the right side of the transistor is bent, causing it to be misaligned with the other leads."", ""severity"": ""medium""}
+```"

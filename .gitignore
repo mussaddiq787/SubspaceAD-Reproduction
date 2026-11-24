@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Downloaded benchmark data and generated image overlays
+/datasets/
+/results/**/intro_overlays/

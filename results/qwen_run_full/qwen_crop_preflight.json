@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-21",
+  "focused_tests_passed": 8,
+  "same_120_paths_in_same_order": true,
+  "same_thresholds": true,
+  "v1_artifacts_unchanged": true,
+  "v1_artifact_hashes": {
+    "results/qwen_run_full/mvtec_ad_mean_layers-12-13-14-15-16-17-18_res448_docrop0_score-reconstruction_clahe0_dropk0_model-dinov2-with-registers-largepca_ev0.99_i-scoremtop1p_k1_aug30xr_seed42/per_image_scores.csv": "1453cf27ba224fb948771b57d61d97f7c402b7a8746bb9eaf063916a3e08e313",
+    "results/qwen_run_full/mvtec_ad_mean_layers-12-13-14-15-16-17-18_res448_docrop0_score-reconstruction_clahe0_dropk0_model-dinov2-with-registers-largepca_ev0.99_i-scoremtop1p_k1_aug30xr_seed42/qwen_explanations_grounded.csv": "61709e46f6216432f8c3493043a99c2ebc3f9c97cf93fc849a61790b4fb07958",
+    "results/qwen_run_full/mvtec_ad_mean_layers-12-13-14-15-16-17-18_res448_docrop0_score-reconstruction_clahe0_dropk0_model-dinov2-with-registers-largepca_ev0.99_i-scoremtop1p_k1_aug30xr_seed42/qwen_explanations_ungrounded.csv": "872534173a4c13121ca5c9f0a64c4553aa8205529c74623272f71d9af821df55"
+  },
+  "crop_area_fraction": {
+    "count": 120.0,
+    "mean": 0.9129024910079893,
+    "std": 0.16796933153762247,
+    "min": 0.24674444444444443,
+    "25%": 0.8913281103063513,
+    "50%": 1.0,
+    "75%": 1.0,
+    "max": 1.0
+  },
+  "empty_difference_fallbacks": 0,
+  "full_image_bounding_boxes": 73,
+  "rendered_mask_difference_threshold": 0,
+  "margin_per_side": 0.15
+}

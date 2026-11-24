@@ -1,0 +1,41 @@
+[
+  {
+    "kind": "correct_type",
+    "selection_rule": "first matching row in the fixed grounded sample",
+    "category": "bottle",
+    "path": "datasets/mvtec-ad/bottle/test/contamination/002.png",
+    "defect_type": "contamination",
+    "decision": "DEFECTIVE",
+    "pred_type": "contamination",
+    "location": "center",
+    "description": "A central, bright blue and green area with surrounding red and orange patches, indicating a concentrated contamination.",
+    "severity": "high",
+    "raw": "```json\n{\n  \"defect_type\": \"contamination\",\n  \"location\": \"center\",\n  \"description\": \"A central, bright blue and green area with surrounding red and orange patches, indicating a concentrated contamination.\",\n  \"severity\": \"high\"\n}\n```"
+  },
+  {
+    "kind": "wrong_type",
+    "selection_rule": "first matching row in the fixed grounded sample",
+    "category": "bottle",
+    "path": "datasets/mvtec-ad/bottle/test/broken_large/019.png",
+    "defect_type": "broken_large",
+    "decision": "DEFECTIVE",
+    "pred_type": "contamination",
+    "location": "around the bottle opening",
+    "description": "The image shows a circular area with a ring of colored patches, indicating a contamination on the bottle's surface. The color gradient from blue to orange suggests a localized defect.",
+    "severity": "medium",
+    "raw": "```json\n{\n  \"defect_type\": \"contamination\",\n  \"location\": \"around the bottle opening\",\n  \"description\": \"The image shows a circular area with a ring of colored patches, indicating a contamination on the bottle's surface. The color gradient from blue to orange suggests a localized defect.\",\n  \"severity\": \"medium\"\n}\n```"
+  },
+  {
+    "kind": "normal_assigned_none",
+    "selection_rule": "first matching row in the fixed grounded sample",
+    "category": "bottle",
+    "path": "datasets/mvtec-ad/bottle/test/good/016.png",
+    "defect_type": "good",
+    "decision": "NORMAL",
+    "pred_type": "none",
+    "location": "center",
+    "description": "The image shows a bottle with no visible defects, and the anomaly detector's decision is NORMAL.",
+    "severity": "none",
+    "raw": "```json\n{\"defect_type\": \"none\", \"location\": \"center\", \"description\": \"The image shows a bottle with no visible defects, and the anomaly detector's decision is NORMAL.\", \"severity\": \"none\"}\n```"
+  }
+]

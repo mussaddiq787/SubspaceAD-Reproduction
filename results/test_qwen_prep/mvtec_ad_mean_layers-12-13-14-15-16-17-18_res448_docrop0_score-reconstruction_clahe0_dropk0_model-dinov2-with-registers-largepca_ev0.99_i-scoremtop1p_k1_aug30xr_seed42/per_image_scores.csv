@@ -1,0 +1,11 @@
+category,path,defect_type,label,img_score
+bottle,datasets/mvtec-ad/bottle/test/broken_large/000.png,broken_large,1,6.077627658843994
+bottle,datasets/mvtec-ad/bottle/test/broken_large/001.png,broken_large,1,7.046543121337891
+bottle,datasets/mvtec-ad/bottle/test/broken_large/002.png,broken_large,1,6.422562122344971
+bottle,datasets/mvtec-ad/bottle/test/broken_large/003.png,broken_large,1,7.084402084350586
+bottle,datasets/mvtec-ad/bottle/test/broken_large/004.png,broken_large,1,7.4837141036987305
+bottle,datasets/mvtec-ad/bottle/test/broken_large/005.png,broken_large,1,6.471988201141357
+bottle,datasets/mvtec-ad/bottle/test/broken_large/006.png,broken_large,1,7.1182122230529785
+bottle,datasets/mvtec-ad/bottle/test/broken_large/007.png,broken_large,1,5.889432907104492
+bottle,datasets/mvtec-ad/bottle/test/broken_large/008.png,broken_large,1,7.054115295410156
+bottle,datasets/mvtec-ad/bottle/test/broken_large/009.png,broken_large,1,5.66488790512085

@@ -1,0 +1,11 @@
+{
+  "rows": 4,
+  "json_schema_valid": 4,
+  "model_id": "Qwen/Qwen3-VL-2B-Instruct",
+  "model_revision": "89644892e4d85e24eaac8bacfd4f463576704203",
+  "dtype": "float16",
+  "quantized": false,
+  "transformers_api_changes": false,
+  "parser_changes": false,
+  "pilot_saved": "results/qwen_run_full/mvtec_ad_mean_layers-12-13-14-15-16-17-18_res448_docrop0_score-reconstruction_clahe0_dropk0_model-dinov2-with-registers-largepca_ev0.99_i-scoremtop1p_k1_aug30xr_seed42/qwen_pilot_grounded.csv"
+}

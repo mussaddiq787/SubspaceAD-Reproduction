@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-19",
+  "status": "PASS",
+  "rows": 1725,
+  "overlays": 1725,
+  "categories": 15,
+  "category_counts": {
+    "bottle": 83,
+    "cable": 150,
+    "capsule": 132,
+    "carpet": 117,
+    "grid": 78,
+    "hazelnut": 110,
+    "leather": 124,
+    "metal_nut": 115,
+    "pill": 167,
+    "screw": 160,
+    "tile": 117,
+    "toothbrush": 42,
+    "transistor": 100,
+    "wood": 79,
+    "zipper": 151
+  },
+  "all_metrics_match_original_at_saved_precision": true,
+  "all_selected_exemplars_match_original": true,
+  "normal_images": 467,
+  "defective_images": 1258,
+  "per_image_scores_sha256": "1453cf27ba224fb948771b57d61d97f7c402b7a8746bb9eaf063916a3e08e313",
+  "main_py_sha256": "0588a00209bb75b31a1889c3534e9b82acd2366aa0abeaaa76e140a01d2f4032",
+  "explain_qwen_py_sha256": "487edf50529b48fd1609ca439b111424c6e2aa0e6dc857e3ba547ef59c3dbd1a",
+  "run_path": "results/qwen_run_full/mvtec_ad_mean_layers-12-13-14-15-16-17-18_res448_docrop0_score-reconstruction_clahe0_dropk0_model-dinov2-with-registers-largepca_ev0.99_i-scoremtop1p_k1_aug30xr_seed42"
+}
